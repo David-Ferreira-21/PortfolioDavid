@@ -1,0 +1,30 @@
+/* Estilo para o footer */
+.footer {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Cor do texto branca */
+    padding: 8rem 2rem; /* Espaçamento interno */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribui o conteúdo ao longo da largura */
+    align-items: center; /* Alinha verticalmente no centro */
+    max-width: 1200px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    display: flex;
+}
+
+.footer-copyright {
+    flex: 1;
+    text-align: right; /* Alinha o texto à direita */
+}

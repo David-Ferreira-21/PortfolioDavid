@@ -1,0 +1,35 @@
+.contact-me {
+    display: flex;
+    align-items: flex-start;
+    padding: 6rem 4rem; /* Ajuste o espaçamento conforme necessário */
+    height: 200px;
+    color: var(--color-white);
+    background-color: #000; /* Cor de fundo para diferenciar a seção */
+    background-image: url('../../assets/images/contact-me.png');
+}
+
+.contact-me-content {
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contact-me-content h2 {
+    font-size: 2.2rem;
+    margin-top: -20px;
+}
+
+.contact_button {
+    display: flex;
+    float: right;
+    margin: 0 auto;
+    margin-left: 30rem;
+    color: var(--color-white);
+}
+
+.contact_button:hover {
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 10px;
+}

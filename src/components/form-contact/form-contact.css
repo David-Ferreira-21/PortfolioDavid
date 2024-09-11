@@ -1,0 +1,125 @@
+.form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10rem 2rem; /* Ajuste o espaçamento conforme necessário */
+    background-color: #f5f5f5; /* Cor de fundo para diferenciar a seção */
+}
+
+.form-contact-content {
+    display: flex;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-contact-image img {
+    width: 70%;
+    height: 100%;
+    margin-left: 10%;
+    object-fit: cover; /* Corta a imagem para cobrir o contêiner */
+    object-position: top center; /* Centraliza a imagem dentro do contêiner */
+    border-radius: 8px;
+  }
+
+  .form-contact-image {
+    flex: 1;
+    height: 500px; /* Define a altura fixa */
+    padding-right: 2rem;
+    overflow: hidden; /* Garante que o conteúdo excedente seja cortado */
+  }
+
+.form-contact-text {
+    flex: 1;
+    justify-content: flex-start;
+  }
+  
+  .form-contact-text h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.8;
+    margin-bottom: 5rem;
+    margin-top: 0;
+  }
+
+  .highlight {
+    color: var(--color-dark-red); /* Deixa a palavra em vermelho */
+  }
+  
+  .form-contact-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-medium-gray);
+  }
+
+  .service-list-address {
+    list-style-type: none;
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .service-list-address li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-list-address b {
+    margin-right: 1rem;
+  }
+  
+  .service-list-address .icon {
+    color: var(--color-dark-red); /* Ajuste a cor do ícone conforme necessário */
+    margin-right: 10px;
+  }
+
+.form-contact-form {
+    flex: 1; /* O formulário ocupa a maior parte do espaço disponível */
+    max-width: 50%; /* Limita a largura do formulário a 50% da tela */
+    margin-left: auto; /* Alinha o formulário à direita, se necessário */
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    min-height: 6rem; /* Ajusta a altura mínima para permitir 5 linhas visíveis */
+    resize: vertical; /* Permite que o usuário redimensione verticalmente */
+}
+
+.submit-btn {
+    padding: 1.3rem 1.5rem;
+    width: 100%;
+    border: none;
+    background-color: var(--color-dark-red);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-red);
+}
+
+  

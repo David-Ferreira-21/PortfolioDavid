@@ -1,0 +1,46 @@
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10rem 2rem; /* Ajuste o espaçamento conforme necessário */
+    background-color: #ffffff; /* Cor de fundo para diferenciar a seção */
+}
+
+.work-content {
+    display: flex;
+    max-width: 1200px; /* Limita a largura máxima da seção */
+    width: 100%;
+    align-items: center;
+}
+
+.highlight {
+    color: var(--color-dark-red); /* Deixa a palavra em vermelho */
+}
+
+.about-us-text h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+    column-gap: 0; /* Ajuste o espaçamento horizontal (direita e esquerda) */
+    row-gap: 3rem;
+}
+
+.gallery-grid img {
+    width: 80%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

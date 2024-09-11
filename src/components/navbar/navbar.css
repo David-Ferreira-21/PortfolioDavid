@@ -1,0 +1,83 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 2rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: var(--color-white);
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.navbar, .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+     /* Cor ao passar o mouse */
+    border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: var(--color-dark-gray); 
+    color: var(--color-dark-red); 
+    border-radius: 4px;
+}
+
+.navbar.scrolled a {
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar.scrolled a:hover,
+.navbar.scrolled a.active {
+    background-color: var(--color-medium-gray);
+    color: var(--color-dark-red);
+}
+
+.menu-toggle {
+    display: none; /* Inicialmente escondido */
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-icon::before {
+    content: '\2630'; /* Ícone de menu (três linhas) */
+  }
